@@ -17,6 +17,16 @@ npm run docs:dev
 npm run docs:build
 ```
 
+## 报错
+```
+控制台vue版本不匹配
+npm install vue@对应的版本
+```
+```
+网站console报错
+npm install async-validator@1.11.5 --save
+```
+
 ## 目录
 
 ### Vue-cli
