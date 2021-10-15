@@ -27,9 +27,6 @@ module.exports = {
         // 通过 themeConfig.sidebarDepth 来修改它的行为。默认的深度是 1，它将提取到 h2 的标题，设置成 0 将会禁用标题（headers）链接，同时，最大的深度为 2，它将同时提取 h2 和 h3 标题。
         sidebarDepth: 2,
         lastUpdated: '上次更新时间',
-        startYear: '2021',
-        repo: 'InhamiRei/InhamiRei.github.io',
-        repoLabel: 'GitHub',
-        // 以下为可选的编辑链接选项
+        startYear: '2021'
     },
 }
