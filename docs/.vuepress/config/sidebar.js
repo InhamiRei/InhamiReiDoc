@@ -4,6 +4,21 @@ const { getChildren } = require("vuepress-sidebar-atuo")
 
 module.exports = [
     {
+        title: "JavaScript",
+        collapsable: false,
+        children: [
+            ["/JavaScript/Array/", "Array方法"],
+            ["/JavaScript/Math/", "Math方法"]
+        ]
+    },
+    {
+        title: "VuePress",
+        collapsable: false,
+        children: [
+            ["/vuePress/stepPit/", "踩坑"]
+        ]
+    },
+    {
         title: "Vue-cli",
         collapsable: false,
         children: [
@@ -26,4 +41,36 @@ module.exports = [
             ["/update/update_2021/", "2021"]
         ]
     },
+    {
+        title: "附录1：芋圆社区部署",
+        collapsable: false,
+        children: [
+            ['/community/OutLine/', "部署前言"],
+            ["/community/FinalShell/", "部署"],
+            ["/community/Other/", "其他"],
+        ]
+    },
+    {
+        title: "附录2：面试题",
+        collapsable: false,
+        children: [
+            ['/interview/1_OutLine/', "简单的面试题"],
+            ['/interview/2_This/', "This指向"],
+            ['/interview/3_FunctionNow/', "立即执行函数"],
+            ['/interview/4_SomeEveryForEach/', "some,every,forEach"],
+            ['/interview/5_BoxModel/', "盒子模型"],
+            ['/interview/6_VerticalCenter/', "垂直居中方法"],
+            ['/interview/7_Position/', "定位的种类"],
+            ['/interview/8_CSSPriority/', "CSS优先级"],
+            ['/interview/9_ClassPrototype/', "class继承和原型链"],
+            ['/interview/10_BFC/', "BFC"],
+            ['/interview/11_VariableType/', "JS变量类型"],
+            ['/interview/12_DeepShallowCopy/', "浅拷贝和深拷贝"],
+            ['/interview/13_Closure/', "闭包"],
+            ['/interview/14_Bind/', "bind函数"],
+            ['/interview/15_Promise/', "promise"],
+            ['/interview/16_AsyncAwaitPromise/', "async,await,promise"],
+            // ['/interview/17_Ajax/', "Ajax"]
+        ]
+    }
 ]

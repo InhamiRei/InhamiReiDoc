@@ -29,8 +29,15 @@ npm install async-validator@1.11.5 --save
 
 ## 目录
 
+### JavaScript
++ <a href="https://inhamirei.github.io/JavaScript/Array/" target="_blank">Array方法</a>
++ <a href="https://inhamirei.github.io/JavaScript/Math/" target="_blank">Math方法</a>
+
+### VuePress
++ <a href="https://inhamirei.github.io/JavaScript/Math/" target="_blank">Math方法</a>
+
 ### Vue-cli
-+ <a href="https://inhamirei.github.io/vue-cli/environment/" target="_blank">环境配置</a>
++ <a href="https://inhamirei.github.io/vuePress/stepPit/" target="_blank">踩坑</a>
 
 ### Git
 + <a href="https://inhamirei.github.io/Git/GitCommon/" target="_blank">基本指令</a>
@@ -39,6 +46,14 @@ npm install async-validator@1.11.5 --save
 
 ### 更新日志
 + <a href="https://inhamirei.github.io/update/update_2021/" target="_blank">2021</a>
+
+### 附录1：芋圆社区部署
++ <a href="https://inhamirei.github.io/community/OutLine/" target="_blank">基本指令</a>
++ <a href="https://inhamirei.github.io/community/FinalShell/" target="_blank">其他指令</a>
++ <a href="https://inhamirei.github.io/community/Other/" target="_blank">合作开发流程</a>
+
+### 附录2：面试题
+……
 
 ## 社区
 + <a href="https://inhami.com/" target="_blank">芋圆社区</a>

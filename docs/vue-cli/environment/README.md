@@ -87,7 +87,7 @@ drawLine() {
 :::
 
 <div align="center">
-    <img :src="$withBase('/img/Echarts报错.png')" alt="Echarts报错.png">
+    <img :src="$withBase('/img/vue-cli/Echarts报错.png')" alt="Echarts报错.png">
 </div>
 
 + 修改main.js的添加
