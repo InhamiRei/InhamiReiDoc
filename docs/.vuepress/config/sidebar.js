@@ -70,7 +70,15 @@ module.exports = [
             ['/interview/14_Bind/', "bind函数"],
             ['/interview/15_Promise/', "promise"],
             ['/interview/16_AsyncAwaitPromise/', "async,await,promise"],
-            // ['/interview/17_Ajax/', "Ajax"]
+            ['/interview/17_Ajax/', "Ajax"],
+            ['/interview/18_HTTPHTTPS/', "HTTP和HTTPS"],
+        ]
+    },
+    {
+        title: "附录3：算法题",
+        collapsable: false,
+        children: [
+            ['/Algorithm/1_两数之和/', "两数之和"],
         ]
     }
 ]
