@@ -10,11 +10,13 @@ npm install
 ```
 ```
 // 运行项目
-npm run docs:dev
+// npm run docs:dev
+npm run dev
 ```
 ```
 // 打包
-npm run docs:build
+// npm run docs:build
+npm run build
 ```
 
 ## 报错
@@ -53,6 +55,9 @@ npm install async-validator@1.11.5 --save
 + <a href="https://inhamirei.github.io/community/Other/" target="_blank">合作开发流程</a>
 
 ### 附录2：面试题
+……
+
+### 附录3：算法题
 ……
 
 ## 社区
