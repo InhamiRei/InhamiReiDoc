@@ -2,11 +2,11 @@
 
 ```js
 // 返回绝对值
-Math.abs('-1');     // 1
-Math.abs(-2);       // 2
-Math.abs(null);     // 0
+Math.abs("-1"); // 1
+Math.abs(-2); // 2
+Math.abs(null); // 0
 Math.abs("string"); // NaN
-Math.abs();         // NaN
+Math.abs(); // NaN
 ```
 
 ## Math.ceil
@@ -46,8 +46,8 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   //不含最大值，含最小值
   return Math.floor(Math.random() * (max - min)) + min;
-  //含最大值，含最小值 
-  return Math.floor(Math.random() * (max - min + 1)) + min; 
+  //含最大值，含最小值
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 ```
 
@@ -55,12 +55,12 @@ function getRandomInt(min, max) {
 
 ```js
 Math.max(10, 20); // 20
-Math.max(10, 20, '1') // NaN
+Math.max(10, 20, "1"); // NaN
 ```
 
 ## Math.min
 
 ```js
 Math.min(10, 20); // 10
-Math.min(10, 20, '1') // NaN
+Math.min(10, 20, "1"); // NaN
 ```

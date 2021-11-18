@@ -1,4 +1,5 @@
 ## 合作开发流程
+
 ```
 //从远程仓库克隆初始项目
 git clone 项目地址
@@ -10,13 +11,13 @@ git checkout -b 分支名
 git status
 
 // 查看状态
-git status 
+git status
 
 // 添加当前目录的所有文件的修改到暂存区
 git add .
 
 // 提交暂存区的内容到本地仓库
-git commit -m "信息" 
+git commit -m "信息"
 
 // 推送内容到远程仓库，若没有该分支 则自动创建并推送
 git push origin 分支名
@@ -28,7 +29,7 @@ git checkout master
 git pull
 
 // 合并分支
-git merge 分支名 
+git merge 分支名
 
 // 如果有冲突，在vscode解决冲突后
 // 重新 add commit push三个指令

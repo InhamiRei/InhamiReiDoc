@@ -72,7 +72,7 @@ module.exports = [
       ["/interview/9_ClassPrototype/", "class继承和原型链"],
       ["/interview/10_BFC/", "BFC"],
       ["/interview/11_VariableType/", "JS变量类型"],
-      ["/interview/12_DeepShallowCopy/", "浅拷贝和深拷贝"],
+      ["/interview/12_CSSInherit/", "CSS中可继承与不可继承属性"],
       ["/interview/13_Closure/", "闭包"],
       ["/interview/14_Bind/", "bind函数"],
       ["/interview/15_Promise/", "promise"],

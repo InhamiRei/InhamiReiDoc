@@ -1,4 +1,4 @@
-## Nginx的命令
+## Nginx 的命令
 
 ```
 //启动nginx服务
@@ -8,16 +8,16 @@ service nginx start
 service nginx stop
 
 //重启nginx服务
-service nginx restart     
+service nginx restart
 
 //查看nginx服务状态
 service nginx status
 
 // 重新加载nginx
-sudo service nginx reload 
+sudo service nginx reload
 ```
 
-## 定时任务crontab命令
+## 定时任务 crontab 命令
 
 ```
 // 添加定时任务
@@ -30,7 +30,7 @@ python manage.py crontab add
 python manage.py crontab add
 ```
 
-## Python+Django命令
+## Python+Django 命令
 
 ```
 // 迁移文件
@@ -52,7 +52,7 @@ python3 manage.py changepassword Hey、小怪兽
 
 ## 运行维护命令
 
-+ 如果更新了新的内容
+- 如果更新了新的内容
 
 ```
 cd /home/sites/inhami.com/TaroTown/TaroTown

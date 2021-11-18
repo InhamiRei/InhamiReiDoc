@@ -1,102 +1,104 @@
-## promise三种状态和现象
+## promise 三种状态和现象
 
-+ pending
+- pending
 
 ```js
-const promise1 = new Promise((resolve, reject) => {
-
-});
-console.log('promise1', promise1);
+const promise1 = new Promise((resolve, reject) => {});
+console.log("promise1", promise1);
 ```
 
-+ fulfilled
+- fulfilled
 
 ```js
 // pending 到 fulfilled
 const promise2 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log('promise2 resolve 前', promise2);
-        resolve();
-        console.log('promise2 resolve 后', promise2);
-    })
+  setTimeout(() => {
+    console.log("promise2 resolve 前", promise2);
+    resolve();
+    console.log("promise2 resolve 后", promise2);
+  });
 });
 ```
 
-+ rejected
+- rejected
 
 ```js
 // pending 到 rejected
 const promise3 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log('promise3 reject 前', promise3);
-        reject();
-        console.log('promise3 reject 后', promise3);
-    })
+  setTimeout(() => {
+    console.log("promise3 reject 前", promise3);
+    reject();
+    console.log("promise3 reject 后", promise3);
+  });
 });
 ```
 
-+ fulfilled会执行then后面的函数
-+ rejected会执行catch后面的函数
+- fulfilled 会执行 then 后面的函数
+- rejected 会执行 catch 后面的函数
 
 ```js
-const promise4 = Promise.resolve('promise4 data');
-const promise5 = Promise.resolve('promise5 error');
+const promise4 = Promise.resolve("promise4 data");
+const promise5 = Promise.resolve("promise5 error");
 
-promise4.then(data => {
-    console.log('data', data);
-}).catch(err => {
-    console.error('error', err);
-})
+promise4
+  .then((data) => {
+    console.log("data", data);
+  })
+  .catch((err) => {
+    console.error("error", err);
+  });
 
-promise5.then(data2 => {
-    console.log('data2', data2);
-}).catch(err2 => {
-    console.error('error2', err2);
-})
+promise5
+  .then((data2) => {
+    console.log("data2", data2);
+  })
+  .catch((err2) => {
+    console.error("error2", err2);
+  });
 ```
 
-+ then 正常返回的时候，Promise的状态是fulfilled
-+ then 报错的时候，Promise的状态是rejected
-+ catch 正常返回的时候，Promise的状态是fulfilled
-+ catch 报错的时候，Promise的状态是rejected
+- then 正常返回的时候，Promise 的状态是 fulfilled
+- then 报错的时候，Promise 的状态是 rejected
+- catch 正常返回的时候，Promise 的状态是 fulfilled
+- catch 报错的时候，Promise 的状态是 rejected
 
-## promise回调地狱
+## promise 回调地狱
 
 ```js
-const ID_BASE_URL = 'https://jsonplaceholder.typicode,com/todos';
-const ROBOT_IMG_BASE_URL = 'https://robohash.org';
+const ID_BASE_URL = "https://jsonplaceholder.typicode,com/todos";
+const ROBOT_IMG_BASE_URL = "https://robohash.org";
 
 //获取机器人的id
 function getRobotId(url, callback) {
-    $.get(url, function (data) {
-        const id = data.id;
-        callback(id);
-    });
+  $.get(url, function (data) {
+    const id = data.id;
+    callback(id);
+  });
 }
 
 // 创建机器人
 function createRobot(id) {
-    const img = document.createElement('img');
-    img.src = ROBOT_IMG-BASE_URL + `/${id}?size=200x200`;
-    document.body.appendChild(img);
+  const img = document.createElement("img");
+  img.src = ROBOT_IMG - BASE_URL + `/${id}?size=200x200`;
+  document.body.appendChild(img);
 }
 
 // 回调地狱：金字塔的嵌套结构
-const result = getRobotId(ID_BASE_URL + '/1', function (id) {
+const result = getRobotId(ID_BASE_URL + "/1", function (id) {
+  createRobot(id);
+  getRobotId(ID_BASE_URL + "/2", function (id) {
     createRobot(id);
-    getRobotId(ID_BASE_URL + '/2', function (id) {
+    getRobotId(ID_BASE_URL + "/3", function (id) {
+      createRobot(id);
+      getRobotId(ID_BASE_URL + "/4", function (id) {
         createRobot(id);
-        getRobotId(ID_BASE_URL + '/3', function (id) {
-            createRobot(id);
-            getRobotId(ID_BASE_URL + '/4', function (id) {
-                createRobot(id);
-            })
-        })
-    })
+      });
+    });
+  });
 });
 ```
 
-+ 用promise解决
+- 用 promise 解决
 
 ```js
 const ID_BASE_URL = 'https://jsonplaceholder.typicode,com/todos';
@@ -136,29 +138,31 @@ getRobotPromise(ID_BASE_URL + '/1').then(function(id) => {
 })
 ```
 
-## promise加载图片
+## promise 加载图片
 
 ```js
 function loadImage(src) {
-    const promise = new Promise((resolve, reject) => {
-        const img = document.createElement('img');
-        img.onload = function() {
-            resolve(img);
-        }
-        img.onerror = function() {
-            const error = new Error(`图片加载失败，url为${src}`);
-            reject(error);
-        }
-        img.src = src;
-    });
+  const promise = new Promise((resolve, reject) => {
+    const img = document.createElement("img");
+    img.onload = function () {
+      resolve(img);
+    };
+    img.onerror = function () {
+      const error = new Error(`图片加载失败，url为${src}`);
+      reject(error);
+    };
+    img.src = src;
+  });
 
-    return promise;
+  return promise;
 }
 
-const url = ''
-loadImage(url).then(img => {
-    console.log('img', img);
-}).catch(e => {
-    console.log('error', e);
-})
+const url = "";
+loadImage(url)
+  .then((img) => {
+    console.log("img", img);
+  })
+  .catch((e) => {
+    console.log("error", e);
+  });
 ```

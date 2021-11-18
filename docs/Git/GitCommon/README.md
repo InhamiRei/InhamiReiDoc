@@ -1,4 +1,5 @@
 ## 拉取项目
+
 ```
 // 从远程仓库克隆初始项目
 git clone 项目地址
@@ -10,15 +11,16 @@ git clone -b 别人分支名 项目地址
 ```
 
 ## 分支操作
+
 ```
 // 查看本地分支
-git branch 
+git branch
 
 // 查看远程分支
 git branch -r
 
 // 查看远程分支和本地分支
-git branch -a 
+git branch -a
 
 // 删除本地分支
 git branch -d 分支名
@@ -50,13 +52,13 @@ git fetch origin 远程分支：本地分支
 
 ```
 // 查看状态
-git status 
+git status
 
 // 添加当前目录的所有文件的修改到暂存区
 git add .
 
 // 提交暂存区的内容到本地仓库
-git commit -m "信息" 
+git commit -m "信息"
 
 // 推送内容到远程仓库，若没有该分支 则自动创建并推送
 git push origin 分支名
@@ -69,7 +71,7 @@ git push -f
 
 ```
 // 拉取master主分支最新代码
-git pull  
+git pull
 
 // 强行拉分支（不建议）
 git fetch --all
