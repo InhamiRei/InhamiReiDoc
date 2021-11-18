@@ -15,10 +15,12 @@ module.exports = [
     title: "React",
     collapsable: false,
     children: [
+      ["/React/LifeCycle/", "生命周期"],
       ["/React/ReactBasic/", "基础知识"],
       ["/React/ResponsiveAndData/", "响应式设计和数据的绑定"],
       ["/React/ComponentValue/", "组件之间传值"],
       ["/React/PropTypes/", "PropTypes校验传递值"],
+      ["/React/UseRef/", "Ref的使用方法"],
       ["/React/Plug-in/", "附录1：SimpleReactSnippets插件"],
     ],
   },
