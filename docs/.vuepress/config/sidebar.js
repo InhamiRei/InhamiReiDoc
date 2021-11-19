@@ -4,8 +4,13 @@ const { getChildren } = require("vuepress-sidebar-atuo");
 
 module.exports = [
   {
+    title: "更新日志",
+    collapsable: true,
+    children: [["/update/update_v1.x/", "v1.x版本"]],
+  },
+  {
     title: "JavaScript",
-    collapsable: false,
+    collapsable: true,
     children: [
       ["/JavaScript/Array/", "Array方法"],
       ["/JavaScript/Math/", "Math方法"],
@@ -13,7 +18,7 @@ module.exports = [
   },
   {
     title: "React",
-    collapsable: false,
+    collapsable: true,
     children: [
       ["/React/LifeCycle/", "生命周期"],
       ["/React/ReactBasic/", "基础知识"],
@@ -25,18 +30,28 @@ module.exports = [
     ],
   },
   {
+    title: "Redux",
+    collapsable: true,
+    children: [
+      ["/Redux/StoreReducer/", "store和reducer"],
+      ["/Redux/AddAndDelete/", "添加和删除方法"],
+      ["/Redux/OrganizeDocuments/", "整理分离文件"],
+      ["/Redux/IimportantPoints/", "常错的三点"],
+    ],
+  },
+  {
     title: "VuePress",
-    collapsable: false,
+    collapsable: true,
     children: [["/vuePress/stepPit/", "踩坑"]],
   },
   {
     title: "Vue-cli",
-    collapsable: false,
+    collapsable: true,
     children: [["/vue-cli/environment/", "环境配置"]],
   },
   {
     title: "Git",
-    collapsable: false,
+    collapsable: true,
     children: [
       ["/Git/GitCommon/", "基本指令"],
       ["/Git/GitOther/", "其他指令"],
@@ -44,13 +59,17 @@ module.exports = [
     ],
   },
   {
-    title: "更新日志",
-    collapsable: false,
-    children: [["/update/update_2021/", "2021"]],
+    title: "MarkDown",
+    collapsable: true,
+    children: [
+      ["/MarkDown/BaseUse/", "基本用法"],
+      ["/MarkDown/VuePress/", "VuePress拓展"],
+      ["/MarkDown/Emoji/", "Emoji(整理ing)"],
+    ],
   },
   {
     title: "附录1：芋圆社区部署",
-    collapsable: false,
+    collapsable: true,
     children: [
       ["/community/OutLine/", "部署前言"],
       ["/community/FinalShell/", "部署"],
@@ -59,7 +78,7 @@ module.exports = [
   },
   {
     title: "附录2：面试题",
-    collapsable: false,
+    collapsable: true,
     children: [
       ["/interview/1_OutLine/", "简单的面试题"],
       ["/interview/2_This/", "This指向"],
@@ -83,7 +102,7 @@ module.exports = [
   },
   {
     title: "附录3：算法题",
-    collapsable: false,
+    collapsable: true,
     children: [
       ["/Algorithm/1_SumofNums/", "两数之和"],
       ["/Algorithm/2_ReverseList/", "反转链表"],
