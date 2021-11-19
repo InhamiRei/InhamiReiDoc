@@ -64,7 +64,6 @@ module.exports = [
     children: [
       ["/MarkDown/BaseUse/", "基本用法"],
       ["/MarkDown/VuePress/", "VuePress拓展"],
-      ["/MarkDown/Emoji/", "Emoji(整理ing)"],
     ],
   },
   {
@@ -106,6 +105,18 @@ module.exports = [
     children: [
       ["/Algorithm/1_SumofNums/", "两数之和"],
       ["/Algorithm/2_ReverseList/", "反转链表"],
+    ],
+  },
+  {
+    title: "附录4：Emoji",
+    collapsable: true,
+    children: [
+      ["/Emoji/1_Emoji/", "Emoji（1）"],
+      ["/Emoji/2_Emoji/", "Emoji（2）"],
+      ["/Emoji/3_Emoji/", "Emoji（3）"],
+      ["/Emoji/4_Emoji/", "Emoji（4）"],
+      ["/Emoji/5_Emoji/", "Emoji（5）"],
+      ["/Emoji/6_Emoji/", "Emoji（6）"],
     ],
   },
 ];

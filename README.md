@@ -53,6 +53,13 @@ npm install async-validator@1.11.5 --save
 - <a href="https://inhamirei.github.io/React/UseRef/" target="_blank">Ref 的使用方法</a>
 - <a href="https://inhamirei.github.io/React/Plug-in/" target="_blank">附录 1：SimpleReactSnippets 插件</a>
 
+### Redux
+
+- <a href="https://inhamirei.github.io/Redux/StoreReducer/" target="_blank">store 和 reducer</a>
+- <a href="https://inhamirei.github.io/Redux/AddAndDelete/" target="_blank">添加和删除方法</a>
+- <a href="https://inhamirei.github.io/Redux/OrganizeDocuments/" target="_blank">整理分离文件</a>
+- <a href="https://inhamirei.github.io/Redux/IimportantPoints/" target="_blank">常错的三点</a>
+
 ### VuePress
 
 - <a href="https://inhamirei.github.io/JavaScript/Math/" target="_blank">Math 方法</a>
@@ -66,6 +73,11 @@ npm install async-validator@1.11.5 --save
 - <a href="https://inhamirei.github.io/Git/GitCommon/" target="_blank">基本指令</a>
 - <a href="https://inhamirei.github.io/Git/GitOther/" target="_blank">其他指令</a>
 - <a href="https://inhamirei.github.io/Git/GitPractice/" target="_blank">合作开发流程</a>
+
+### MarkDown
+
+- <a href="https://inhamirei.github.io/MarkDown/BaseUse/" target="_blank">基本用法</a>
+- <a href="https://inhamirei.github.io/MarkDown/VuePress/" target="_blank">VuePress 拓展</a>
 
 ### 更新日志
 
@@ -82,6 +94,10 @@ npm install async-validator@1.11.5 --save
 ……
 
 ### 附录 3：算法题
+
+……
+
+### 附录 4：Emoji
 
 ……
 

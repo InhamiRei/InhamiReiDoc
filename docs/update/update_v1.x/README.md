@@ -1,5 +1,13 @@
 ## v1.0.x :clown_face:
 
+### v1.0.7
+
+<el-tag type="info">2021-11-19</el-tag>
+
+- 整理了所有的 emoji
+- 删除了"MarkDown"模块中的"Emoji"
+- 添加了"Emoji"模块
+
 ### v1.0.6
 
 <el-tag type="info">2021-11-19</el-tag>
